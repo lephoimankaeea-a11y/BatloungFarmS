@@ -1,0 +1,165 @@
+/* ============================================================
+   BATLOUNG FARM - DASHBOARD & COMPONENT STYLING
+   THEME: SHADES OF BROWN
+   ============================================================ */
+
+.dashboard-container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* Dashboard Hero Banner */
+.dashboard-header-banner {
+  background: linear-gradient(135deg, var(--brown-900, #301b0f) 0%, var(--brown-800, #422615) 55%, var(--brown-700, #58331d) 100%);
+  color: #ffffff;
+  padding: 30px 34px;
+  border-radius: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 6px 20px rgba(48, 27, 15, 0.22);
+  border: 1px solid rgba(222, 197, 176, 0.18);
+}
+
+.dashboard-header-banner h2 {
+  font-size: 1.55rem;
+  font-weight: 700;
+  margin-bottom: 6px;
+  color: #ffffff;
+  letter-spacing: -0.3px;
+}
+
+.dashboard-header-banner p {
+  color: var(--brown-200, #dec5b0);
+  font-size: 0.95rem;
+  font-weight: 400;
+}
+
+.date-badge {
+  background: rgba(255, 255, 255, 0.16);
+  padding: 8px 18px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  color: #ffffff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Modern Metric Cards */
+.metric-card {
+  background: #ffffff;
+  padding: 24px;
+  border-radius: 14px;
+  box-shadow: 0 4px 14px rgba(43, 28, 19, 0.04);
+  border: 1px solid var(--border-light, #e7ddd1);
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.metric-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(43, 28, 19, 0.08);
+  border-color: var(--brown-300, #c59773);
+}
+
+.metric-icon {
+  font-size: 2.2rem;
+  background: var(--brown-50, #fbf8f4);
+  width: 65px;
+  height: 65px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  border: 1px solid var(--border-light, #e7ddd1);
+  color: var(--brown-700, #58331d);
+}
+
+.metric-card p {
+  color: var(--text-muted, #6e594d);
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.metric-card h3 {
+  font-size: 1.6rem;
+  color: var(--brown-800, #422615);
+  font-weight: 800;
+}
+
+.metric-sub {
+  font-size: 0.82rem;
+  color: var(--brown-600, #6f4024);
+  font-weight: 600;
+  margin-top: 4px;
+  display: block;
+}
+
+/* Table Card Header */
+.table-card {
+  padding: 28px;
+}
+
+.table-header-flex {
+  margin-bottom: 20px;
+}
+
+.table-header-flex h3 {
+  font-size: 1.25rem;
+  color: var(--brown-800, #422615);
+  font-weight: 700;
+}
+
+.table-desc {
+  font-size: 0.88rem;
+  color: var(--text-muted, #6e594d);
+  margin-top: 4px;
+}
+
+/* Status Badges */
+.badge {
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  display: inline-block;
+  border: 1px solid transparent;
+}
+
+.badge-settled {
+  background-color: var(--status-paid-bg, #efe2d5);
+  color: var(--status-paid-text, #58331d);
+  border-color: var(--status-paid-border, #dec5b0);
+}
+
+.badge-pending {
+  background-color: var(--status-warn-bg, #fdf5e6);
+  color: var(--status-warn-text, #945318);
+  border-color: var(--status-warn-border, #f8dfb4);
+}
+
+.badge-credit {
+  background-color: #f6f0ea;
+  color: #7c4623;
+  border-color: #dfcdbf;
+}
+
+.loading-state {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+  font-size: 1.15rem;
+  color: var(--brown-700, #58331d);
+  font-weight: 600;
+}
