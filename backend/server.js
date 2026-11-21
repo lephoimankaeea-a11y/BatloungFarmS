@@ -10,6 +10,10 @@ app.use(express.json());
 app.use(cors());
 
 // 3. Import Routes
+// Homepage Route
+app.get('/', (req, res) => {
+    res.send('Batloung Fruits Distribution Management System API is running!');
+});
 const supplierRoutes = require('./routes/supplierRoutes');
 const fruitRoutes = require('./routes/fruitRoutes');
 const vendorRoutes = require('./routes/vendorRoutes');
